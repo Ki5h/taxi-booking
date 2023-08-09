@@ -21,11 +21,25 @@
   </modules>
 
   <distributionManagement>
+           
     <site>
       <id>site-server</id>
       <name>Test Project Site</name>
       <url>file:///tmp/maven-project-site</url>
     </site>
+
+     <repository>
+	      <id>nexus</id>
+	      <name>calculator Releases Nexus Repository</name>
+	      <url>http://184.72.112.48:8081/repository/Release/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>calculator Snapshot Nexus Repository </name>
+	      <url>http://184.72.112.48:8081/repository/Snapshot/</url>
+	    </snapshotRepository>
+           
   </distributionManagement>
 
   <build>
