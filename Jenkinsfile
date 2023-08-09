@@ -3,11 +3,7 @@ def registry  = 'https://stalin.jfrog.io'
 def version   = '1.0.3'
 def app
 pipeline {
-    agent {
-       node {
-         label "valaxy"
-      }
-    }
+    agent any
     stages {
         stage('Build') {
             steps {
