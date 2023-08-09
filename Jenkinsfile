@@ -7,7 +7,7 @@ pipeline{
 	  stage('checkout')
 	   {
 	     steps{
-		    git credentialsId: '15f0a019-ecce-4205-bf7b-0ddaccba1fa3', url: 'https://github.com/stpl-pro/jenkins-calculator.git'
+		    git branch: 'dev', credentialsId: '65b54889-a611-4ec5-9c31-594d2b0993cf', url: 'https://github.com/Ki5h/taxi-booking.git'
      		  }
            }
           stage('Build')
